@@ -1,6 +1,6 @@
 {
-  "name": "mayerjuly-derived",
-  "version": "1.0.0",
+  "name": "@mayerjuly/derived-store",
+  "version": "0.0.1",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
