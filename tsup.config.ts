@@ -1,11 +1,11 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from 'tsup'
 
 export default defineConfig({
     entry: {
-        index: "core/index.ts",
+        index: 'core/index.ts'
     },
-    format: ["esm", "cjs"],
+    format: ['esm', 'cjs'],
     dts: true,
     clean: true,
-    external: ["react"]
-});
+    external: ['react']
+})

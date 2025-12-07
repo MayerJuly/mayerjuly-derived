@@ -1,11 +1,9 @@
-export type Listener = () => void;
+export type Listener = () => void
 
-export type SetState<T> = T | ((prev: T) => T)
+export type StateUpdater<T> = T | ((prev: T) => T)
 
 export interface Store<T> {
-    getState(): T;
-
-    setState(next: SetState<T>): void;
-
-    subscribe(listener: Listener): () => void;
+    getState(): T
+    setState(updater: StateUpdater<T>): void
+    subscribe(listener: Listener): () => void
 }
